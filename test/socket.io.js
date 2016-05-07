@@ -36,7 +36,7 @@ describe('socket.io', function(){
   describe('set', function() {
     it('should be able to set ping timeout to engine.io', function() {
       var srv = io(http());
-      srv.set('heartbeat timeout', 10);
+      srv.set('heartbeat timeout', 5);
       expect(srv.eio.pingTimeout).to.be(10);
     });
 
